@@ -1,0 +1,4 @@
+include dochelper_app/assets/css/*.css
+include dochelper_app/assets/img/*.svg
+include dochelper_app/assets/js/*.js
+include dochelper_app/assets/md/*.md

@@ -1,0 +1,24 @@
+# Normalize line endings on commit; check out per-platform by default.
+* text=auto
+
+# Scripts executed on Linux/macOS (and inside Docker) must keep LF.
+# CRLF here breaks the shebang: "/bin/bash^M: bad interpreter".
+*.sh text eol=lf
+launch.sh text eol=lf
+
+# Windows batch files need CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Explicitly binary, so Git never touches their contents.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+*.pdf binary
+*.zip binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
